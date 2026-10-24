@@ -1,0 +1,8 @@
+User-agent: *
+Disallow: /book
+Disallow: /book/
+Disallow: /manage-booking
+Disallow: /admin-demo
+Allow: /
+
+Sitemap: https://hotelcarltonbareilly.com/sitemap.xml

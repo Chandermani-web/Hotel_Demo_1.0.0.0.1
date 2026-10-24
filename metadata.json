@@ -1,0 +1,6 @@
+{
+  "name": "Hotel Carlton – Civil Lines, Bareilly",
+  "description": "Official website of Hotel Carlton, a 3-star heritage hotel on Malgodam Road in Civil Lines, Bareilly. Quiet hospitality, verified amenities, and direct booking enquiries.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
