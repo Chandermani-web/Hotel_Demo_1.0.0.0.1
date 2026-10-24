@@ -16,7 +16,7 @@ export interface ImageAsset {
 
 export const imageManifest = {
   hero: {
-    src: "/src/assets/images/carlton_hero_facade_1792844006115.jpg",
+    src: "./src/assets/images/carlton_hero_facade_1792844006115.jpg",
     alt: "Hotel Carlton exterior facade and entrance in Civil Lines, Bareilly",
     width: 1920,
     height: 1080,
@@ -24,7 +24,7 @@ export const imageManifest = {
     category: "hotel" as const,
   },
   welcomeGrounds: {
-    src: "/src/assets/images/carlton_welcome_grounds_1792844006827.jpg",
+    src: "./src/assets/images/carlton_welcome_grounds_1792844006827.jpg",
     alt: "Arched verandah and manicured garden grounds at Hotel Carlton",
     width: 1200,
     height: 900,
@@ -32,7 +32,7 @@ export const imageManifest = {
     category: "hotel" as const,
   },
   swimmingPool: {
-    src: "/src/assets/images/carlton_swimming_pool_1792844007306.jpg",
+    src: "./src/assets/images/carlton_swimming_pool_1792844007306.jpg",
     alt: "Outdoor swimming pool and poolside seating at Hotel Carlton",
     width: 1200,
     height: 900,
@@ -40,7 +40,7 @@ export const imageManifest = {
     category: "pool" as const,
   },
   roomDeluxe: {
-    src: "/src/assets/images/carlton_room_deluxe_1792844008621.jpg",
+    src: "./src/assets/images/carlton_room_deluxe_1792844008621.jpg",
     alt: "Deluxe guest room with classic wooden furnishings and warm natural light",
     width: 1200,
     height: 900,
@@ -48,7 +48,7 @@ export const imageManifest = {
     category: "rooms" as const,
   },
   roomSuite: {
-    src: "/src/assets/images/carlton_room_suite_1792844008255.jpg",
+    src: "./src/assets/images/carlton_room_suite_1792844008255.jpg",
     alt: "Spacious guest suite with sitting area and heritage decor",
     width: 1200,
     height: 900,
