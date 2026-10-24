@@ -1,58 +1,57 @@
-/**
- * Central Image Manifest for Hotel Carlton
- * 
- * Replace paths here when real hotel photographs are provided by management.
- * All images are centralized to prevent hardcoded paths across components.
- */
 
+import heroImage from "../assets/images/carlton_hero_facade_1792844006115.jpg";
+import groundsImage from "../assets/images/carlton_welcome_grounds_1792844006827.jpg";
+import poolImage from "../assets/images/carlton_swimming_pool_1792844007306.jpg";
+import deluxeImage from "../assets/images/carlton_room_deluxe_1792844008621.jpg";
+import suiteImage from "../assets/images/carlton_room_suite_1792844008255.jpg";
 export interface ImageAsset {
   src: string;
   alt: string;
   width: number;
   height: number;
   caption?: string;
-  category: 'hotel' | 'rooms' | 'amenities' | 'pool';
+  category: "hotel" | "rooms" | "amenities" | "pool";
 }
 
 export const imageManifest = {
   hero: {
-    src: "./src/assets/images/carlton_hero_facade_1792844006115.jpg",
+    src: heroImage,
     alt: "Hotel Carlton exterior facade and entrance in Civil Lines, Bareilly",
     width: 1920,
     height: 1080,
     caption: "Hotel Carlton facade and entrance portico in Civil Lines",
-    category: "hotel" as const,
+    category: "hotel",
   },
   welcomeGrounds: {
-    src: "./src/assets/images/carlton_welcome_grounds_1792844006827.jpg",
+    src: groundsImage,
     alt: "Arched verandah and manicured garden grounds at Hotel Carlton",
     width: 1200,
     height: 900,
     caption: "Heritage verandah and hotel garden walkway",
-    category: "hotel" as const,
+    category: "hotel",
   },
   swimmingPool: {
-    src: "./src/assets/images/carlton_swimming_pool_1792844007306.jpg",
+    src: poolImage,
     alt: "Outdoor swimming pool and poolside seating at Hotel Carlton",
     width: 1200,
     height: 900,
     caption: "The outdoor swimming pool and sun loungers",
-    category: "pool" as const,
+    category: "pool",
   },
   roomDeluxe: {
-    src: "./src/assets/images/carlton_room_deluxe_1792844008621.jpg",
+    src: deluxeImage,
     alt: "Deluxe guest room with classic wooden furnishings and warm natural light",
     width: 1200,
     height: 900,
     caption: "Deluxe Room (Design placeholder – to be confirmed by hotel)",
-    category: "rooms" as const,
+    category: "rooms",
   },
   roomSuite: {
-    src: "./src/assets/images/carlton_room_suite_1792844008255.jpg",
+    src: suiteImage,
     alt: "Spacious guest suite with sitting area and heritage decor",
     width: 1200,
     height: 900,
     caption: "Executive Suite (Design placeholder – to be confirmed by hotel)",
-    category: "rooms" as const,
-  }
-};
+    category: "rooms",
+  },
+} satisfies Record<string, ImageAsset>;
