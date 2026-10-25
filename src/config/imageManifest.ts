@@ -1,5 +1,5 @@
 
-import heroImage from "../assets/images/carlton_hero_facade_1792844006115.jpg";
+import heroImage from "../assets/images/image.png";
 import groundsImage from "../assets/images/carlton_welcome_grounds_1792844006827.jpg";
 import poolImage from "../assets/images/carlton_swimming_pool_1792844007306.jpg";
 import deluxeImage from "../assets/images/carlton_room_deluxe_1792844008621.jpg";
