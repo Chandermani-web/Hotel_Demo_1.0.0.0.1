@@ -75,7 +75,7 @@ export const roomsData: RoomItem[] = [
       "Room Service",
       "Laundry Service",
       "Parking",
-      "Swimming Pool Access"
+      "Food & Dining"
     ]
   }
 ];

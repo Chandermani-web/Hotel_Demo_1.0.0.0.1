@@ -1,6 +1,7 @@
 import React from 'react';
 import { MapPin, Navigation, ExternalLink } from 'lucide-react';
 import { siteConfig } from '../config/siteConfig';
+import mapImage from '../assets/images/map.png';
 
 export const MapEmbed: React.FC = () => {
   const directionsUrl = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(
@@ -21,17 +22,24 @@ export const MapEmbed: React.FC = () => {
         </div>
       ) : (
         /* Truthful, tasteful fallback card when mapEmbedUrl is not configured */
-        <div className="p-8 md:p-12 text-center bg-[#FAF6EE] border-b border-[#D9C9A8]/60 flex flex-col items-center justify-center min-h-[260px]">
-          <div className="w-12 h-12 rounded-full bg-[#A8884B]/15 flex items-center justify-center text-[#8C6F38] mb-4">
+        <div className="relative isolate overflow-hidden p-8 md:p-12 text-center border-b border-[#D9C9A8]/60 flex flex-col items-center justify-center min-h-[260px]">
+          <img
+            src={mapImage}
+            alt=""
+            aria-hidden="true"
+            className="absolute inset-0 -z-20 h-full w-full scale-110 object-cover blur-sm"
+          />
+          <div className="absolute inset-0 -z-10 bg-[#FAF6EE]/85" aria-hidden="true" />
+          <div className="relative z-0 w-12 h-12 rounded-full bg-[#A8884B]/15 flex items-center justify-center text-[#8C6F38] mb-4">
             <MapPin className="w-6 h-6" aria-hidden="true" />
           </div>
-          <h3 className="text-xl font-serif font-semibold text-[#2A1D15] mb-2">
+          <h3 className="relative z-0 text-xl font-serif font-semibold text-[#2A1D15] mb-2">
             Hotel Carlton Location
           </h3>
-          <p className="text-sm text-[#2B2B2B]/80 max-w-md mx-auto leading-relaxed mb-6">
+          <p className="relative z-0 text-sm text-[#2B2B2B]/80 max-w-md mx-auto leading-relaxed mb-6">
             {siteConfig.address.full}
           </p>
-          <div className="flex flex-wrap items-center justify-center gap-3">
+          <div className="relative z-0 flex flex-wrap items-center justify-center gap-3">
             <a
               href={directionsUrl}
               target="_blank"
@@ -53,7 +61,7 @@ export const MapEmbed: React.FC = () => {
               </a>
             )}
           </div>
-          <p className="text-[11px] text-[#2B2B2B]/50 mt-4">
+          <p className="relative z-0 text-[11px] text-[#2B2B2B]/50 mt-4">
             * Interactive map embed URL can be configured directly in site configuration.
           </p>
         </div>

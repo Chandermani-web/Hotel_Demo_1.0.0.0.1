@@ -30,7 +30,7 @@ export const GalleryPage: React.FC<GalleryPageProps> = ({ navigate }) => {
     <>
       <SeoHead
         title="Photo Gallery – Hotel Carlton | Civil Lines, Bareilly"
-        description="View photographs of Hotel Carlton in Civil Lines, Bareilly. Explore our heritage facade, guest rooms, swimming pool, and property grounds."
+        description="View photographs of Hotel Carlton in Civil Lines, Bareilly. Explore our heritage facade, guest rooms, food service, and courtyard."
         canonicalPath="/gallery"
         breadcrumbs={[{ name: "Gallery", item: "/gallery" }]}
       />
@@ -48,7 +48,7 @@ export const GalleryPage: React.FC<GalleryPageProps> = ({ navigate }) => {
           </h1>
           <DiamondDivider className="my-4" />
           <p className="text-sm sm:text-base text-[#2B2B2B]/80 max-w-2xl mx-auto leading-relaxed">
-            Photographic impressions of Hotel Carlton, our heritage architecture, guest quarters, and swimming pool in Civil Lines.
+            Photographic impressions of Hotel Carlton, our heritage architecture, guest quarters, food service, and courtyard in Civil Lines.
           </p>
 
           {/* Interactive Filter Controls (Segmented Tabs with functional click handlers) */}

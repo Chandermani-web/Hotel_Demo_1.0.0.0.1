@@ -33,7 +33,7 @@ export const HomePage: React.FC<HomePageProps> = ({ navigate }) => {
     {
       number: "02",
       title: "Essential Modern Amenities",
-      desc: "Thoughtful hospitality featuring confirmed Wi-Fi, on-site parking, outdoor swimming pool, air conditioning, room service, and laundry."
+      desc: "Thoughtful hospitality featuring confirmed Wi-Fi, on-site parking, food and dining service, air conditioning, room service, and laundry."
     },
     {
       number: "03",
@@ -133,7 +133,7 @@ export const HomePage: React.FC<HomePageProps> = ({ navigate }) => {
                 Hotel Carlton offers tranquil accommodation in Civil Lines, Bareilly. Positioned along Malgodam Road, the hotel combines classic architectural proportion with essential amenities designed for modern travelers, families, and visiting professionals.
               </p>
               <p>
-                Whether you are visiting Bareilly for business, attending family celebrations, or traveling through Uttar Pradesh, Hotel Carlton provides an unhurried atmosphere, thoughtful front desk assistance, and peaceful courtyard grounds.
+                Whether you are visiting Bareilly for business, attending family celebrations, or traveling through Uttar Pradesh, Hotel Carlton provides an unhurried atmosphere, thoughtful front desk assistance, and a peaceful courtyard setting.
               </p>
             </div>
 
@@ -161,17 +161,17 @@ export const HomePage: React.FC<HomePageProps> = ({ navigate }) => {
             <div className="relative mx-auto max-w-md lg:max-w-none">
               <div className="relative overflow-hidden rounded-t-[120px] rounded-b-[4px] border border-[#D9C9A8] shadow-md bg-[#FFFDF8] p-2">
                 <img
-                  src={imageManifest.welcomeGrounds.src}
-                  alt={imageManifest.welcomeGrounds.alt}
-                  width={imageManifest.welcomeGrounds.width}
-                  height={imageManifest.welcomeGrounds.height}
+                  src={imageManifest.welcomeCourtyard.src}
+                  alt={imageManifest.welcomeCourtyard.alt}
+                  width={imageManifest.welcomeCourtyard.width}
+                  height={imageManifest.welcomeCourtyard.height}
                   referrerPolicy="no-referrer"
                   className="w-full h-auto object-cover rounded-t-[114px] rounded-b-[2px]"
                 />
               </div>
               <div className="text-center mt-3">
                 <span className="text-xs text-[#2B2B2B]/60 italic font-serif">
-                  Hotel grounds and verandah walkway
+                  Hotel courtyard and verandah walkway
                 </span>
               </div>
             </div>
@@ -298,13 +298,13 @@ export const HomePage: React.FC<HomePageProps> = ({ navigate }) => {
 
             <div className="relative rounded-[3px] overflow-hidden border border-[#D9C9A8] shadow-xs">
               <img
-                src={imageManifest.swimmingPool.src}
-                alt={imageManifest.swimmingPool.alt}
+                src={imageManifest.foodFeature.src}
+                alt={imageManifest.foodFeature.alt}
                 referrerPolicy="no-referrer"
                 className="w-full h-64 object-cover"
               />
               <div className="p-3 bg-[#FFFDF8] text-xs text-[#2B2B2B]/75 border-t border-[#D9C9A8]/40 flex items-center justify-between">
-                <span>The Swimming Pool at Hotel Carlton</span>
+                <span>Food & Dining at Hotel Carlton</span>
                 <span className="text-[#8C6F38] font-serif italic">Resident Facility</span>
               </div>
             </div>
@@ -424,13 +424,13 @@ export const HomePage: React.FC<HomePageProps> = ({ navigate }) => {
           <div className="md:col-span-5 flex flex-col gap-6">
             <div className="flex-1 rounded-[3px] overflow-hidden border border-[#D9C9A8] relative min-h-[160px] group cursor-pointer" onClick={() => navigate('/gallery')}>
               <img
-                src={imageManifest.swimmingPool.src}
-                alt="Swimming pool"
+                src={imageManifest.foodFeature.src}
+                alt={imageManifest.foodFeature.alt}
                 referrerPolicy="no-referrer"
                 className="w-full h-full object-cover group-hover:scale-[1.02] transition-transform duration-500"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4">
-                <span className="text-white text-xs font-semibold uppercase tracking-widest">Swimming Pool Deck</span>
+                <span className="text-white text-xs font-semibold uppercase tracking-widest">Food & Dining Service</span>
               </div>
             </div>
 

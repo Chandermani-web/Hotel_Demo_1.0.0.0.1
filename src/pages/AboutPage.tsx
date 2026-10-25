@@ -62,7 +62,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({ navigate }) => {
             <div className="md:col-span-5">
               <div className="rounded-[3px] overflow-hidden border border-[#D9C9A8] shadow-xs">
                 <img
-                  src={imageManifest.welcomeGrounds.src}
+                  src={imageManifest.welcomeCourtyard.src}
                   alt="Verandah walkway at Hotel Carlton"
                   referrerPolicy="no-referrer"
                   className="w-full h-auto object-cover"
@@ -95,7 +95,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({ navigate }) => {
                   <span>Essential Services</span>
                 </h3>
                 <p className="text-xs text-[#2B2B2B]/80 leading-relaxed">
-                  Rather than making unsubstantiated promises, we focus on confirmed guest necessities: Wi-Fi, on-site parking, swimming pool access, room service, and laundry care.
+                  Rather than making unsubstantiated promises, we focus on confirmed guest necessities: Wi-Fi, on-site parking, food and dining service, room service, and laundry care.
                 </p>
               </div>
 

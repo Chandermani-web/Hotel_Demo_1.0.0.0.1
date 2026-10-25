@@ -2,8 +2,7 @@
  * Gallery Data for Hotel Carlton
  * 
  * Strict Truth Rules:
- * - Categories: 'all' | 'rooms' | 'hotel' | 'amenities' | 'pool'
- * - Note: No dining category until real verified dining photos exist.
+ * - Categories: 'all' | 'rooms' | 'hotel' | 'amenities'
  */
 
 import { imageManifest } from '../config/imageManifest';
@@ -11,7 +10,7 @@ import { imageManifest } from '../config/imageManifest';
 export interface GalleryItem {
   id: string;
   title: string;
-  category: 'rooms' | 'hotel' | 'amenities' | 'pool';
+  category: 'rooms' | 'hotel' | 'amenities';
   src: string;
   alt: string;
   caption: string;
@@ -19,9 +18,8 @@ export interface GalleryItem {
 
 export const galleryCategories = [
   { id: 'all', label: 'All Photos' },
-  { id: 'hotel', label: 'Hotel & Grounds' },
+  { id: 'hotel', label: 'Hotel & Courtyard' },
   { id: 'rooms', label: 'Rooms & Suites' },
-  { id: 'pool', label: 'Swimming Pool' },
   { id: 'amenities', label: 'Amenities' },
 ] as const;
 
@@ -38,17 +36,17 @@ export const galleryData: GalleryItem[] = [
     id: "gal-2",
     title: "Verandah & Garden Walk",
     category: "hotel",
-    src: imageManifest.welcomeGrounds.src,
-    alt: imageManifest.welcomeGrounds.alt,
+    src: imageManifest.welcomeCourtyard.src,
+    alt: imageManifest.welcomeCourtyard.alt,
     caption: "Arched verandah overlooking the quiet hotel garden pathway."
   },
   {
     id: "gal-3",
-    title: "Outdoor Swimming Pool",
-    category: "pool",
-    src: imageManifest.swimmingPool.src,
-    alt: imageManifest.swimmingPool.alt,
-    caption: "The outdoor swimming pool area bordered by sandstone pavers and shade loungers."
+    title: "Food & Dining",
+    category: "amenities",
+    src: imageManifest.foodFeature.src,
+    alt: imageManifest.foodFeature.alt,
+    caption: "Food and dining service available for resident guests."
   },
   {
     id: "gal-4",
@@ -68,10 +66,10 @@ export const galleryData: GalleryItem[] = [
   },
   {
     id: "gal-6",
-    title: "Poolside Courtyard",
+    title: "Resident Dining Service",
     category: "amenities",
-    src: imageManifest.swimmingPool.src,
-    alt: "Poolside relaxation area for resident guests",
-    caption: "Dedicated recreational swimming and sun lounger amenity on hotel grounds."
+    src: imageManifest.foodFeature.src,
+    alt: "Food and dining service for resident guests",
+    caption: "Meals and refreshments prepared for resident guests."
   }
 ];

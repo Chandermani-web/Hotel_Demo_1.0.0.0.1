@@ -993,7 +993,7 @@ export const BookPage: React.FC<BookPageProps> = ({ navigate, navigationState })
                           onChange={(e) => setRequests({ ...requests, groundFloorPreference: e.target.checked })}
                           className="accent-[#5A1F24]"
                         />
-                        <span>Ground Floor / Verandah Preference</span>
+                        <span>Lower Floor / Verandah Preference</span>
                       </label>
 
                       {/* Extra Bed (Only allowed on Executive & Suite) */}
@@ -1196,7 +1196,7 @@ export const BookPage: React.FC<BookPageProps> = ({ navigate, navigationState })
                     <div className="flex flex-wrap gap-2 text-[#2A1D15]">
                       {requests.earlyCheckIn && <span className="bg-[#FAF6EE] px-2 py-0.5 border border-[#D9C9A8]/60">Early Check-in Requested</span>}
                       {requests.lateCheckOut && <span className="bg-[#FAF6EE] px-2 py-0.5 border border-[#D9C9A8]/60">Late Check-out Requested</span>}
-                      {requests.groundFloorPreference && <span className="bg-[#FAF6EE] px-2 py-0.5 border border-[#D9C9A8]/60">Ground Floor Preferred</span>}
+                      {requests.groundFloorPreference && <span className="bg-[#FAF6EE] px-2 py-0.5 border border-[#D9C9A8]/60">Lower Floor Preferred</span>}
                       {requests.extraBed && <span className="bg-[#FAF6EE] px-2 py-0.5 border border-[#D9C9A8]/60">Extra Bed Included</span>}
                       {!requests.earlyCheckIn && !requests.lateCheckOut && !requests.groundFloorPreference && !requests.extraBed && (
                         <span className="text-[#2B2B2B]/60">Standard room preferences</span>

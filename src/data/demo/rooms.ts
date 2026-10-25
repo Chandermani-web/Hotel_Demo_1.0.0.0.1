@@ -74,7 +74,7 @@ export const demoRooms: DemoRoom[] = [
     imageAlt: imageManifest.roomSuite.alt,
     shortDesc: "Generous heritage suite with separated sitting lounge, reading chairs, and natural courtyard light.",
     bedType: "Master Bedroom with Sitting Lounge (subject to hotel confirmation)",
-    confirmedAmenities: ["Air Conditioning", "Wi-Fi", "Room Service", "Laundry Service", "Parking", "Swimming Pool Access"],
+    confirmedAmenities: ["Air Conditioning", "Wi-Fi", "Room Service", "Laundry Service", "Parking", "Food & Dining"],
     isDemoData: true
   }
 ];

@@ -24,9 +24,9 @@ export const faqData: FaqItem[] = [
     answer: "Yes, Hotel Carlton provides on-site parking on the premises for guests and visitors traveling by car."
   },
   {
-    id: "faq-pool",
-    question: "Is there a swimming pool available for resident guests?",
-    answer: "Yes, an outdoor swimming pool is available on the hotel grounds for staying guests. Operating hours and seasonal maintenance schedules should be verified with the front desk."
+    id: "faq-food",
+    question: "Is food and dining service available for resident guests?",
+    answer: "Yes, food and dining service is available for resident guests. Please contact the front desk to confirm current menu options and service timing."
   },
   {
     id: "faq-wifi",

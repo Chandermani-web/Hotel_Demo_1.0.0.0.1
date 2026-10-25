@@ -1,16 +1,16 @@
 
 import heroImage from "../assets/images/image.png";
-import groundsImage from "../assets/images/carlton_welcome_grounds_1792844006827.jpg";
-import poolImage from "../assets/images/carlton_swimming_pool_1792844007306.jpg";
-import deluxeImage from "../assets/images/carlton_room_deluxe_1792844008621.jpg";
-import suiteImage from "../assets/images/carlton_room_suite_1792844008255.jpg";
+import courtyardImage from "../assets/images/Commonarea.jpg";
+import foodImage from "../assets/images/Reception.avif";
+import deluxeImage from "../assets/images/Room2.jpg";
+import suiteImage from "../assets/images/Room1.jpg";
 export interface ImageAsset {
   src: string;
   alt: string;
   width: number;
   height: number;
   caption?: string;
-  category: "hotel" | "rooms" | "amenities" | "pool";
+  category: "hotel" | "rooms" | "amenities";
 }
 
 export const imageManifest = {
@@ -22,21 +22,21 @@ export const imageManifest = {
     caption: "Hotel Carlton facade and entrance portico in Civil Lines",
     category: "hotel",
   },
-  welcomeGrounds: {
-    src: groundsImage,
-    alt: "Arched verandah and manicured garden grounds at Hotel Carlton",
+  welcomeCourtyard: {
+    src: courtyardImage,
+    alt: "Arched verandah and landscaped courtyard at Hotel Carlton",
     width: 1200,
     height: 900,
     caption: "Heritage verandah and hotel garden walkway",
     category: "hotel",
   },
-  swimmingPool: {
-    src: poolImage,
-    alt: "Outdoor swimming pool and poolside seating at Hotel Carlton",
+  foodFeature: {
+    src: foodImage,
+    alt: "Food and dining service at Hotel Carlton",
     width: 1200,
     height: 900,
-    caption: "The outdoor swimming pool and sun loungers",
-    category: "pool",
+    caption: "Food and dining service for resident guests",
+    category: "amenities",
   },
   roomDeluxe: {
     src: deluxeImage,

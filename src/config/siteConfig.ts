@@ -88,7 +88,7 @@ export const siteConfig: SiteConfig = {
   confirmedAmenities: [
     "Wi-Fi",
     "Parking",
-    "Swimming Pool",
+    "Food & Dining",
     "Air Conditioning",
     "Laundry Service",
     "Room Service"

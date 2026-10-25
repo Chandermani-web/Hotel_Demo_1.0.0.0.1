@@ -5,7 +5,7 @@ import { Breadcrumbs } from '../components/Breadcrumbs';
 import { BookingCTABand } from '../components/BookingCTABand';
 import { SeoHead } from '../components/SeoHead';
 import { DiamondDivider } from '../components/Ornament';
-import { Wifi, Car, Waves, Wind, Utensils, Shirt, Phone } from 'lucide-react';
+import { Wifi, Car, Wind, Utensils, Shirt, Phone } from 'lucide-react';
 
 interface AmenitiesPageProps {
   navigate: (path: string) => void;
@@ -18,8 +18,8 @@ export const AmenitiesPage: React.FC<AmenitiesPageProps> = ({ navigate }) => {
         return <Wifi className="w-5 h-5 text-[#A8884B]" aria-hidden="true" />;
       case 'parking':
         return <Car className="w-5 h-5 text-[#A8884B]" aria-hidden="true" />;
-      case 'swimming-pool':
-        return <Waves className="w-5 h-5 text-[#A8884B]" aria-hidden="true" />;
+      case 'food-dining':
+        return <Utensils className="w-5 h-5 text-[#A8884B]" aria-hidden="true" />;
       case 'air-conditioning':
         return <Wind className="w-5 h-5 text-[#A8884B]" aria-hidden="true" />;
       case 'room-service':
@@ -35,7 +35,7 @@ export const AmenitiesPage: React.FC<AmenitiesPageProps> = ({ navigate }) => {
     <>
       <SeoHead
         title="Guest Amenities – Hotel Carlton | Civil Lines, Bareilly"
-        description="Verified guest amenities at Hotel Carlton in Civil Lines, Bareilly: Swimming Pool, Wi-Fi, on-site Parking, Air Conditioning, Laundry, and Room Service."
+        description="Verified guest amenities at Hotel Carlton in Civil Lines, Bareilly: Food & Dining, Wi-Fi, on-site Parking, Air Conditioning, Laundry, and Room Service."
         canonicalPath="/amenities"
         breadcrumbs={[{ name: "Amenities", item: "/amenities" }]}
       />
@@ -108,7 +108,7 @@ export const AmenitiesPage: React.FC<AmenitiesPageProps> = ({ navigate }) => {
             Have Questions Regarding Specific Facilities?
           </h3>
           <p className="text-xs text-[#2B2B2B]/75 leading-relaxed max-w-xl mx-auto mb-4">
-            If you have questions about pool operating hours, parking arrangements for large vehicles, or specific laundry turnaround times, please speak with our front desk team.
+            If you have questions about food service timing, parking arrangements for large vehicles, or specific laundry turnaround times, please speak with our front desk team.
           </p>
           <a
             href={`tel:${siteConfig.phoneTel}`}

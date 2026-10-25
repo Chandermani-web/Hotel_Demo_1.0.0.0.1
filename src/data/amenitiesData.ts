@@ -5,7 +5,7 @@
  * ONLY verified amenities are included:
  * 1. Wi-Fi
  * 2. Parking
- * 3. Swimming Pool
+ * 3. Food & Dining
  * 4. Air Conditioning
  * 5. Laundry Service
  * 6. Room Service
@@ -26,12 +26,12 @@ export interface AmenityItem {
 
 export const amenitiesData: AmenityItem[] = [
   {
-    id: "swimming-pool",
-    name: "Swimming Pool",
-    shortDesc: "Outdoor pool surrounded by sandstone deck and quiet garden grounds.",
-    fullDesc: "An outdoor swimming pool set within the hotel's private courtyard, complemented by sun loungers and shaded sitting areas for guest relaxation.",
-    image: imageManifest.swimmingPool.src,
-    imageAlt: imageManifest.swimmingPool.alt
+    id: "food-dining",
+    name: "Food & Dining",
+    shortDesc: "Fresh meals and refreshments available for resident guests.",
+    fullDesc: "Food and dining service is available for resident guests, with meals and refreshments prepared and delivered through the hotel’s hospitality team.",
+    image: imageManifest.foodFeature.src,
+    imageAlt: imageManifest.foodFeature.alt
   },
   {
     id: "wifi",
@@ -45,7 +45,7 @@ export const amenitiesData: AmenityItem[] = [
     id: "parking",
     name: "Parking",
     shortDesc: "On-site parking area for visiting guests and private vehicles.",
-    fullDesc: "Dedicated vehicular parking space provided on the property grounds for resident guests and visitors traveling by personal or hired transport.",
+    fullDesc: "Dedicated vehicular parking space provided on the property premises for resident guests and visitors traveling by personal or hired transport.",
     image: imageManifest.hero.src,
     imageAlt: "Paved entrance courtyard and parking area at Hotel Carlton"
   },
@@ -70,7 +70,7 @@ export const amenitiesData: AmenityItem[] = [
     name: "Laundry Service",
     shortDesc: "Professional laundering and pressing services for guests.",
     fullDesc: "Daily laundry and garment pressing services handled with care by hotel staff to keep your wardrobe fresh throughout your stay in Bareilly.",
-    image: imageManifest.welcomeGrounds.src,
+    image: imageManifest.welcomeCourtyard.src,
     imageAlt: "Attentive housekeeping and laundry care at Hotel Carlton"
   }
 ];

@@ -52,7 +52,7 @@ export const TermsPage: React.FC<TermsPageProps> = ({ navigate }) => {
           <div>
             <h2 className="text-xl font-serif font-semibold text-[#2A1D15] mb-2">3. Amenity Usage & Courtyard Conduct</h2>
             <p>
-              Use of confirmed amenities—including vehicular parking, wireless internet, and the swimming pool—is governed by hotel house rules to ensure the tranquility and safety of all resident guests.
+              Use of confirmed amenities—including vehicular parking, wireless internet, and food service—is governed by hotel house rules to ensure the tranquility and safety of all resident guests.
             </p>
           </div>
 
